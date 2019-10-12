@@ -1,0 +1,72 @@
+<!--
+@it starts indented paragraph, and uses a default values if no value is provided
+
+.IP
+lorem ipsum
+.P
+dolor sit
+-->
+
+<div>
+<dl style="margin-bottom: 0;margin-top: 0;">
+<dt style="float: left; clear: left;"></dt><dd style=" margin-left: 8%;">lorem ipsum</dd>
+</dl>
+</div>
+<div style="margin-bottom: 2%;">dolor sit
+
+<!--
+@it starts indented paragraph, and uses specified tag and a default indent value if no value is provided
+
+.IP "*"
+lorem ipsum
+.P
+dolor sit
+-->
+
+<div>
+<dl style="margin-bottom: 0;margin-top: 0;">
+<dt style="float: left; clear: left;">*</dt><dd style=" margin-left: 8%;">lorem ipsum</dd>
+</dl>
+</div>
+<div style="margin-bottom: 2%;">dolor sit
+
+
+<!--
+@it starts indented paragraph, and uses specified tag and indent value
+
+.IP "" 10
+lorem ipsum
+.P
+dolor sit
+-->
+
+<div>
+<dl style="margin-bottom: 0;margin-top: 0;">
+<dt style="float: left; clear: left;"></dt><dd style=" margin-left: 10%;">lorem ipsum</dd>
+</dl>
+</div>
+<div style="margin-bottom: 2%;">dolor sit
+
+<!--
+@it starts two default indented paragraphs
+
+.IP
+lorem ipsum
+.IP
+dolor sit amet,
+.P
+consectetur adipiscing
+-->
+
+<div>
+<dl style="margin-bottom: 0;margin-top: 0;">
+<dt style="float: left; clear: left;"></dt><dd style=" margin-left: 8%;">lorem ipsum</dd>
+</dl>
+</div>
+<div>
+<dl style="margin-bottom: 0;margin-top: 0;">
+<dt style="float: left; clear: left;"></dt><dd style=" margin-left: 8%;">dolor sit amet,</dd>
+</dl>
+</div>
+<div style="margin-bottom: 2%;">
+consectetur adipiscing
