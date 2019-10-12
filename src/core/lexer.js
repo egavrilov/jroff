@@ -30,8 +30,9 @@ var Lexer = function (source) {
 
 /**
  * Performs the following tasks to the source string:
- * - Replaces < and > symbols with their HTML escape equivalents
+ * - Replaces bullets, em-dashes, copyright with their HTML entities
  * - Adds whitespaces between escape sequences
+ * - Replaces < and > symbols with their HTML escape equivalents
  *
  * @argument {string} source
  *
@@ -42,6 +43,9 @@ var Lexer = function (source) {
  */
 Lexer.prototype.cleanSource = function (source) {
   return source
+    .replace(/\\\(bu|\\\[bu\]/g, '&bull;')
+    .replace(/\\\(em|\\\[em\]/g, '&mdash;')
+    .replace(/\\\(co|\\\[co\]/g, '&copy;')
     .replace(patterns.escape, ' $1 ')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
