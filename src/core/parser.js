@@ -123,7 +123,7 @@ Parser.prototype.handleBreak = function (token) {
   if(this.lastTok.kind === BREAK) {
     this.scope.push(new Token('br', MACRO));
   } else {
-    this.scope.push(new Token(' ', TEXT));
+    this.scope.push(new Token('\n', TEXT));
   }
 
   this.lastTok = token;

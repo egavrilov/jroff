@@ -1,14 +1,16 @@
 <!--
-@it only produces a line break
+@it stops filling
 
 lorem ipsum
 .nf
-dolor sit
+dolor
+sit
 -->
 
 lorem ipsum
-<br>
-dolor sit
+<divstyle="white-space:pre;display:block;">
+dolor
+sit
 
 <!--
 @it ignores any argument provided
@@ -19,5 +21,35 @@ dolor sit
 -->
 
 lorem ipsum
-<br>
+<divstyle="white-space:pre;display:block;">
 dolor sit
+
+<!--
+@it stops filling and fi starts again
+
+lorem ipsum
+.nf
+dolor
+sit
+.fi
+amet, consectetur adipiscing elit
+-->
+
+lorem ipsum
+<divstyle="white-space:pre;display:block;">
+dolor
+sit
+</div>
+amet, consectetur adipiscing elit
+
+<!--
+@it fi is a no-op if not nf precedes it
+
+lorem ipsum
+.fi
+dolor
+-->
+
+lorem ipsum
+dolor
+
