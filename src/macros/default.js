@@ -1,7 +1,8 @@
 var fontMappings = {
   B: 'strong',
-  R: 'span',
+  C: 'code',
   I: 'i',
+  R: 'span',
   S: 'small'
 };
 
